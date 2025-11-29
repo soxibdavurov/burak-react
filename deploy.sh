@@ -2,13 +2,8 @@
 
 #PRODUCTION
 git reset --hard
-<<<<<<< HEAD
 git checkout main
 git pull origin main
-=======
-git checkout master
-git pull origin master
->>>>>>> develop
 
 npm i yarn -g
 yarn global add serve
