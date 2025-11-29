@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+export function OtherNavbar() {
+    return <div>Other Navbar</div>;
+=======
 import { Box, Button, Container, ListItemIcon, Menu, MenuItem, Stack } from "@mui/material";
 import { NavLink } from "react-router-dom";
 import Basket from "./Basket";
@@ -148,4 +152,5 @@ export default function OtherNavbar(props: OtherNavbarProps) {
       </Container>
   </div>
   );
+>>>>>>> develop
 }

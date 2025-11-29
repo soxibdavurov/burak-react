@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+import { Container } from "@mui/material"
+
+export function HomePage() {
+  return <Container>Home</Container>;
+}
+=======
 import React, { useEffect } from "react";
 import { Container } from "@mui/material";
 import Statistics from "./Statistics";
@@ -70,3 +77,4 @@ export default function HomePage() {
 
   </div>;
 }
+>>>>>>> develop

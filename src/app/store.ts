@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
+
+export const store = configureStore({
+  reducer: {},
+=======
 import { configureStore, ThunkAction, Action, getDefaultMiddleware } from "@reduxjs/toolkit";
 import HomePageReducer from "./screens/homePage/slice";
 import ProductPageReducer from "./screens/productsPage/slice";
@@ -13,6 +19,7 @@ export const store = configureStore({
     productsPage: ProductPageReducer,
     ordersPage: OrdersPageReducer,
   },
+>>>>>>> develop
 });
 
 export type AppDispatch = typeof store.dispatch;

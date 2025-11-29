@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+import { Container } from "@mui/material"
+
+export function HelpPage() {
+  return <Container>HelpPage</Container>;
+=======
 import React from "react";
 import { Box, Container, Stack, Tabs } from "@mui/material";
 import Typography from "@mui/material/Typography";
@@ -124,4 +130,5 @@ export default function HelpPage() {
       </Container>
     </div>
   );
+>>>>>>> develop
 }

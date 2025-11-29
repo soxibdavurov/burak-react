@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+import { Container } from "@mui/material"
+
+export function ProductsPage() {
+  return <Container>Products Page</Container>;
+}
+=======
 import React from "react";
 import { Container } from "@mui/material";
 import {Route, Switch, useRouteMatch} from "react-router-dom";
@@ -29,3 +36,4 @@ export default function ProductsPage(props: ProductsPageProps) {
 </div>
   );
 }
+>>>>>>> develop

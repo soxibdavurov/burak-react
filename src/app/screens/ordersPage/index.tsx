@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+import { Container } from "@mui/material"
+
+export function OrdersPage() {
+  return <Container>OrdersPage</Container>;
+}
+=======
 import TabContext from "@mui/lab/TabContext";
 import { Box, Button, Container, Input, Stack } from "@mui/material";
 import { SyntheticEvent, useEffect, useState } from "react";
@@ -171,3 +178,4 @@ export default function OrdersPage() {
     </div>
   )   
 }
+>>>>>>> develop
