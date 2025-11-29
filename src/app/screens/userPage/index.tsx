@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-import { Container } from "@mui/material"
-
-export function UserPage() {
-  return <Container>User Page</Container>;
-=======
 import { Box, Container, Stack } from "@mui/material";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -89,5 +83,4 @@ export default function UserPage() {
       </Container>
     </div>
   );
->>>>>>> develop
 }
