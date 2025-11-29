@@ -2,8 +2,8 @@
 
 #PRODUCTION
 git reset --hard
-git checkout main
-git pull origin main
+git checkout master
+git pull origin master
 
 npm i yarn -g
 yarn global add serve
