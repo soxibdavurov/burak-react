@@ -1,27 +1,26 @@
 #!/bin/bash
 
-set -e  # biror buyruq yiqilsa, script to'xtasin
 
 # PRODUCTION (kerak bo'lsa ochib ishlatasan)
-# git reset --hard
-# git checkout master
-# git pull origin master
+git reset --hard
+git checkout master
+git pull origin master
 
 # Yarn / dependencylar (bir marta o'rnatib qo'ygansan bo'lsa, quyidagilarni komment qilsang ham bo'ladi)
-# npm install -g yarn
-# yarn global add serve
+npm install -g yarn
+yarn global add serve
 
 # Loyihaning dependencylarini o'rnatish
-yarn install
+yarn
 
 # Production build
 yarn run build
 
 # Eski pm2 process bo'lsa o'chiramiz (bo'lmasa ham xato bermasin)
-pm2 delete BURAK-REACT 2>/dev/null || true
+# pm2 delete BURAK-REACT 2>/dev/null || true
 
 # pm2 orqali yarn scriptni ishga tushirish
-pm2 start yarn --name BURAK-REACT -- run start:prod
+pm2 start "yarn run start:prod" --name=BURAK-REACT
 
-# pm2 configni saqlab qo'yish (server qayta yoqilganda ham ishlashi uchun, agar pm2 startup qilgan bo'lsang)
-pm2 save
+# # pm2 configni saqlab qo'yish (server qayta yoqilganda ham ishlashi uchun, agar pm2 startup qilgan bo'lsang)
+# pm2 save
